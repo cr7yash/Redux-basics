@@ -64,8 +64,8 @@ const mapDispatchToProps = (dispatch) => {
   return {
     onIncrementCounter: () => dispatch({ type: "INCREMENT" }),
     onDecrementCounter: () => dispatch({ type: "DECREMENT" }),
-    onAdd: () => dispatch({ type: "ADD" }),
-    onSubtract: () => dispatch({ type: "SUBTRACT" })
+    onAdd: () => dispatch({ type: "ADD", payload: 5 }),
+    onSubtract: () => dispatch({ type: "SUBTRACT", payload: 5 })
   };
 };
 
